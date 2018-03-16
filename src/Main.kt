@@ -17,4 +17,6 @@ fun main(args: Array<String>) {
     val name: String? = readLine()
     // Print the value of user input:
     println("Your name is $name")
+
+    println("Hello world derp")
 }
