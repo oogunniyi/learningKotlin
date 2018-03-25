@@ -17,3 +17,23 @@ Programming exercises:
      * def run() -> prints dog is running, make isHungry to true
      * def eat() -> if Hungry, print Dog eats, if not hungry, print Dog refuses to eat.
  */
+
+
+fun printEvenNumbers(from: Int, to: Int) {
+    // Let's store our Even numbers in a List, so we can customize how we want to print it later:
+    val evenNumbers = arrayListOf<Int>()
+
+    // Loop through from -> to
+    for (i in from..to) {
+        // Check if i is even by doing i modulo 2 and verify that it's result is 0
+        // modulo => Represented by %, is the remainder when dividing 2 numbers.
+        // ex: 3/2 = 1 with remainder of 1 , ex: 6/2 = 3 with remainder of 0
+        if (i % 2 == 0) {
+            // Add(append) the even number to the list:
+            evenNumbers.add(i)
+        }
+    }
+
+    // Print the list via using joinToString()
+    println(evenNumbers.joinToString())
+}
