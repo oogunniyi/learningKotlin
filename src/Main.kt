@@ -15,4 +15,11 @@ fun main(args: Array<String>) {
             breed = "Bull Terrior",
             color = "Blue",
             barkSound = "Woof")
+
+    println("${myDogMaya.name}, a ${myDogMaya.breed} was born, with a ${myDogMaya.color} coat")
+
+    myDogMaya.eat() // Should print not hungry
+    myDogMaya.bark()
+    myDogMaya.run()
+    myDogMaya.eat() // Should eat just fine
 }

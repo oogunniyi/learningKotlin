@@ -28,6 +28,24 @@ class DogExpanded {
  *
  */
 class Dog(val name: String, val breed: String, val color: String, val barkSound: String) {
-    private var isHungry = false
-}
 
+    // "private" is a modifier that says this property is only readable/writable in the scope of
+    // this Dog class.  aka: I can't access this in Main via myDog.isHungry
+    private var isHungry = false
+
+    fun bark() {
+        println("$name barks, '$barkSound'")
+    }
+
+    fun run() {
+        println("$name Runs! And now is hungry.")
+        isHungry = true
+    }
+
+    fun eat() {
+        when (isHungry) {
+            true -> println("$name is starving, and eats everything!")
+            false -> println("$name refuses to eat!")
+        }
+    }
+}
