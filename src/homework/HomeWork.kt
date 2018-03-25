@@ -17,3 +17,7 @@ Programming exercises:
      * def run() -> prints dog is running, make isHungry to true
      * def eat() -> if Hungry, print Dog eats, if not hungry, print Dog refuses to eat.
  */
+
+fun printHello(name: String) {
+    println("Hello $name")
+}
