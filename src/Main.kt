@@ -32,11 +32,13 @@ fun main(args: Array<String>) {
 
             // TODO("Run Assignment functions here")
     )
-//    var exandedTeacher=Teacher(
-//            firstName="Vanessa",
-//            lastName="Peterson",
-//            age=29,
-//            currentSubject="Mathematics")
+    var exandedTeacher=Teacher(
+            firstName="Vanessa",
+            lastName="Peterson",
+            age=29,
+            currentSubject="Mathematics",
+            gender = "Female",
+            students = arrayOf(expandedStudent,expandedStudent2,expandedStudent3) )
 
 
 }

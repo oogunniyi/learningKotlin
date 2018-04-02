@@ -8,8 +8,8 @@ class Student(var gender: String,
     fun getLetterGrade(): String {
         return when {
             numericGrade > 90 -> "A"
-            numericGrade in 0..50 -> "F"
-            numericGrade == 75 -> "C+"
+            numericGrade in 0..89 -> "B"
+            numericGrade == 70 -> "C+"
             else -> "N/A"
         }
     }
