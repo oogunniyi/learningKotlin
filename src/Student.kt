@@ -13,5 +13,11 @@ class Student(var gender: String,
             else -> "N/A"
         }
     }
+
+    override fun toString(): String {
+        return "Student(gender='$gender', favoriteSubject='$favoriteSubject', firstName='$firstName', numericGrade=$numericGrade, age=$age, lastName='$lastName')"
+    }
+
+
 }
 

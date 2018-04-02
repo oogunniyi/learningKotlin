@@ -5,8 +5,13 @@ class Teacher(var firstName: String,
               var gender: String,
               var currentSubject: String) {
 
-    fun studentWithHighestGrade() {
-        //TODO:
-
+    fun studentWithHighestGrade(): Student {
+        var currentHighStudent=students[0]
+        students.forEach {
+            if (it.numericGrade > currentHighStudent.numericGrade) {
+                currentHighStudent=it
+            }
+        }
+        return currentHighStudent
     }
 }

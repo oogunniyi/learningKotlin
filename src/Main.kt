@@ -38,7 +38,8 @@ fun main(args: Array<String>) {
             age=29,
             currentSubject="Mathematics",
             gender = "Female",
-            students = arrayOf(expandedStudent,expandedStudent2,expandedStudent3) )
+            students = arrayOf(expandedStudent2, expandedStudent3, expandedStudent) )
 
+println(exandedTeacher.studentWithHighestGrade())
 
 }
