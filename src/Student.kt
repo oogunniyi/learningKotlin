@@ -6,10 +6,10 @@ class Student(var gender: String,
               var lastName: String) {
 
     fun getLetterGrade(): String {
-        return when (numericGrade) {
-            90 -> "A"
-            in 0..50 -> "F"
-            75 -> "C+"
+        return when {
+            numericGrade > 90 -> "A"
+            numericGrade in 0..50 -> "F"
+            numericGrade == 75 -> "C+"
             else -> "N/A"
         }
     }
